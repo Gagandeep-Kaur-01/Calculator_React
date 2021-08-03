@@ -3,7 +3,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Calculator
+      <span className="App-header">
+        Calculator
+      </span>
     </div>
   );
 }
