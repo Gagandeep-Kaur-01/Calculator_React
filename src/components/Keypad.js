@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Keypad.css'
 
 class Keypad extends Component {
     render() {
