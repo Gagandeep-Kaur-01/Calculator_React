@@ -10,6 +10,16 @@ class Calculator extends Component {
         this.state = { data: ''}
     }
 
+    calculate = () => {
+        try {
+            const result = eval(this.state.data);
+            this.setState({data: result});
+        }
+        catch (e) {
+            this.setState({data: 'error'})
+        }
+    }
+
     render() {
         return (
             <div className="Calculator">
