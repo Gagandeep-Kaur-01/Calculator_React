@@ -39,11 +39,11 @@ class Calculator extends Component {
             <div className="Calculator">
                 <Display data={this.state.data} />
                 <Keypad>
-                    <Button label="C" value="clear" />
-                    <Button label="7" value="7" />
-                    <Button label="4" value="4" />
-                    <Button label="1" value="1" />
-                    <Button label="0" value="0" />
+                    <Button onClick={this.handleClick} label="C" value="clear" />
+                    <Button onClick={this.handleClick} label="7" value="7" />
+                    <Button onClick={this.handleClick} label="4" value="4" />
+                    <Button onClick={this.handleClick} label="1" value="1" />
+                    <Button onClick={this.handleClick} label="0" value="0" />
 
                     <Button label="/" value="/" />
                     <Button label="8" value="8" />
