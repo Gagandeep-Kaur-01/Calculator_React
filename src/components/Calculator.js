@@ -5,6 +5,11 @@ import Display from './Display'
 import './Calculator.css'
 
 class Calculator extends Component {
+    constructor() {
+        super();
+        this.state = { data: ''}
+    }
+
     render() {
         return (
             <div className="Calculator">
