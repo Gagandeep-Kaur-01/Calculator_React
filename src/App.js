@@ -6,8 +6,9 @@ function App() {
   return (
     <div className="App">
       <span className="App-header">
-        <Calculator />
+        Calculator
       </span>
+      <Calculator />
     </div>
   );
 }
