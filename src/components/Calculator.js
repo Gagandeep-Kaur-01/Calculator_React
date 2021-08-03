@@ -45,21 +45,21 @@ class Calculator extends Component {
                     <Button onClick={this.handleClick} label="1" value="1" />
                     <Button onClick={this.handleClick} label="0" value="0" />
 
-                    <Button label="/" value="/" />
-                    <Button label="8" value="8" />
-                    <Button label="5" value="5" />
-                    <Button label="2" value="2" />
-                    <Button label="." value="." />
+                    <Button onClick={this.handleClick} label="/" value="/" />
+                    <Button onClick={this.handleClick} label="8" value="8" />
+                    <Button onClick={this.handleClick} label="5" value="5" />
+                    <Button onClick={this.handleClick} label="2" value="2" />
+                    <Button onClick={this.handleClick} label="." value="." />
 
-                    <Button label="x" value="x" />
-                    <Button label="9" value="9" />
-                    <Button label="6" value="6" />
-                    <Button label="3" value="3" />
-                    <Button label="" value="" />
+                    <Button onClick={this.handleClick} label="x" value="x" />
+                    <Button onClick={this.handleClick} label="9" value="9" />
+                    <Button onClick={this.handleClick} label="6" value="6" />
+                    <Button onClick={this.handleClick} label="3" value="3" />
+                    <Button onClick={this.handleClick} label="" value="" />
 
-                    <Button label="-" value="-" />
-                    <Button label="+" value="+" />
-                    <Button label="=" value="=" />
+                    <Button onClick={this.handleClick} label="-" value="-" />
+                    <Button onClick={this.handleClick} label="+" value="+" />
+                    <Button onClick={this.handleClick} label="=" value="=" />
 
                 </Keypad>
                 
