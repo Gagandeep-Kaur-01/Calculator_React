@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Button from './Button'
 import Keypad from './Keypad'
 import Display from './Display'
+import './Calculator.css'
 
 class Calculator extends Component {
     render() {
