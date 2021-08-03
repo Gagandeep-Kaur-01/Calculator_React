@@ -20,6 +20,20 @@ class Calculator extends Component {
         }
     }
 
+    handleClick = e => {
+        const value = e.target.getAttribute('data-value');
+        switch(value) {
+            case 'clear':
+                this.setState({data: ''});
+                break;
+            case 'equal':
+                this.calculate();
+                break;
+            default:
+                this.setState({data: this.state.data + value});
+        }
+    }
+
     render() {
         return (
             <div className="Calculator">
