@@ -1,4 +1,11 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 .App-header {
+  width: 1000px;
   background-color: #282c34;
   display: flex;
   flex-direction: column;
