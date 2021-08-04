@@ -28,6 +28,8 @@ class Calculator extends Component {
             case 'equal':
                 this.calculate();
                 break;
+            case 'CE':
+                this.backspace();
             default:
                 this.setState({ data: this.state.data + value});
         }
