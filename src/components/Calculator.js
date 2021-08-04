@@ -7,7 +7,9 @@ import Keypad from './Keypad';
 class Calculator extends Component {
     constructor() {
         super();
-        this.state = { data: ''}
+        this.state = { 
+            data: ''
+        }
     }
 
     calculate = () => {
@@ -17,6 +19,12 @@ class Calculator extends Component {
         } catch (e) {
             this.setState({data: 'error'})
         }
+    }
+
+    backspace = () => {
+        this.setState({
+            data: this.state.data.slice(0, -1)
+        })
     }
 
     handleClick = e => {
@@ -30,10 +38,12 @@ class Calculator extends Component {
                 break;
             case 'CE':
                 this.backspace();
+                break;
             default:
                 this.setState({ data: this.state.data + value});
         }
     }
+
     render(){
         return(
             <div className="Calculator">
