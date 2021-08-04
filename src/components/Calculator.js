@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import Button from './Button'
-import Keypad from './Keypad'
-import Display from './Display'
-import './Calculator.css'
+import React, {Component} from 'react';
+import Button from './Button';
+import './Calculator.css';
+import Display from './Display';
+import Keypad from './Keypad';
 
 class Calculator extends Component {
     constructor() {
@@ -14,8 +14,7 @@ class Calculator extends Component {
         try {
             const result = eval(this.state.data);
             this.setState({data: result});
-        }
-        catch (e) {
+        } catch (e) {
             this.setState({data: 'error'})
         }
     }
@@ -24,20 +23,19 @@ class Calculator extends Component {
         const value = e.target.getAttribute('data-value');
         switch(value) {
             case 'clear':
-                this.setState({data: ''});
+                this.setState({ data: ''});
                 break;
             case 'equal':
                 this.calculate();
                 break;
             default:
-                this.setState({data: this.state.data + value});
+                this.setState({ data: this.state.data + value});
         }
     }
-
-    render() {
-        return (
+    render(){
+        return(
             <div className="Calculator">
-                <Display data={this.state.data} />
+                <Display data={this.state.data}/>
                 <Keypad>
                     <Button onClick={this.handleClick} label="C" value="clear" />
                     <Button onClick={this.handleClick} label="7" value="7" />
@@ -51,21 +49,19 @@ class Calculator extends Component {
                     <Button onClick={this.handleClick} label="2" value="2" />
                     <Button onClick={this.handleClick} label="." value="." />
 
-                    <Button onClick={this.handleClick} label="x" value="x" />
+                    <Button onClick={this.handleClick} label="x" value="*" />
                     <Button onClick={this.handleClick} label="9" value="9" />
                     <Button onClick={this.handleClick} label="6" value="6" />
                     <Button onClick={this.handleClick} label="3" value="3" />
-                    <Button onClick={this.handleClick} label="" value="" />
+                    <Button onClick={this.handleClick} label="" value="null" />
 
                     <Button onClick={this.handleClick} label="-" value="-" />
-                    <Button onClick={this.handleClick} label="+" value="+" />
-                    <Button onClick={this.handleClick} label="=" value="=" />
-
+                    <Button onClick={this.handleClick} label="+" size="2" value="+" />
+                    <Button onClick={this.handleClick} label="=" size="2" value="equal" />
                 </Keypad>
-                
             </div>
-        )
+        );
     }
 }
 
-export default Calculator
+export default Calculator;

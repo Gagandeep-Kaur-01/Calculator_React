@@ -11,6 +11,10 @@ class App extends Component {
        </span>
        <Calculator />
       </div>
+      // <div>
+      //   <Calculator />
+      // </div>
+
     )
   }
 }

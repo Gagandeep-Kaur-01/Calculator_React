@@ -1,14 +1,16 @@
-import React, { Component } from 'react'
-import './Keypad.css'
+import React, {Component} from 'react';
+import "./Keypad.css";
 
 class Keypad extends Component {
-    render() {
-        return (
+    render(){
+        return(
             <div className="Keypad">
-                {this.props.children}                
+                {/* We are using composition instead of inheritance.
+                    read more: https://reactjs.org/docs/composition-vs-inheritance.html */}
+                {this.props.children}
             </div>
-        )
+        );
     }
 }
 
-export default Keypad
+export default Keypad;
