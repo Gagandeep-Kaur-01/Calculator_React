@@ -67,9 +67,11 @@ class Calculator extends Component {
                     <Button onClick={this.handleClick} label="3" value="3" />
                     <Button onClick={this.handleClick} label="CE" value="CE" />
 
+                    <Button onClick={this.handleClick} label="(" value="(" />
+                    <Button onClick={this.handleClick} label=")" value=")" />
                     <Button onClick={this.handleClick} label="-" value="-" />
-                    <Button onClick={this.handleClick} label="+" size="2" value="+" />
-                    <Button onClick={this.handleClick} label="=" size="2" value="equal" />
+                    <Button onClick={this.handleClick} label="+" value="+" />
+                    <Button onClick={this.handleClick} label="=" value="equal" />
                 </Keypad>
             </div>
         );
