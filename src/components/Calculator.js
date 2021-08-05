@@ -27,11 +27,18 @@ class Calculator extends Component {
         })
     }
 
+    reset = () => {
+        this.setState({ 
+            data: ''
+        })
+    }
+
     handleClick = e => {
         const value = e.target.getAttribute('data-value');
         switch(value) {
             case 'clear':
-                this.setState({ data: ''});
+                // this.setState({ data: ''});
+                this.reset();
                 break;
             case 'equal':
                 this.calculate();
