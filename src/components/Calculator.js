@@ -49,7 +49,7 @@ class Calculator extends Component {
             <div className="Calculator">
                 <Display data={this.state.data}/>
                 <Keypad>
-                    <Button onClick={this.handleClick} label="C" value="clear" />
+                    <Button onClick={this.handleClick} label="Clear All" value="clear" />
                     <Button onClick={this.handleClick} label="7" value="7" />
                     <Button onClick={this.handleClick} label="4" value="4" />
                     <Button onClick={this.handleClick} label="1" value="1" />
