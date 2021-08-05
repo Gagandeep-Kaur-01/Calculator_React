@@ -47,7 +47,9 @@ class Calculator extends Component {
                 this.backspace();
                 break;
             default:
-                this.setState({ data: this.state.data + value});
+                this.setState({ 
+                    data: this.state.data + value
+                });
         }
     }
 
